@@ -5,7 +5,7 @@ const orderSchema: Schema = new Schema<OrderInterface>({
 
   email: {
     type: String,
-    
+
     required: [true, 'Email is required'],
   },
   productId: {
@@ -28,3 +28,5 @@ const orderSchema: Schema = new Schema<OrderInterface>({
 const OrderModel = model<OrderInterface>('Order', orderSchema);
 
 export default OrderModel;
+
+
