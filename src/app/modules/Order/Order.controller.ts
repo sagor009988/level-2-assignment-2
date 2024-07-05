@@ -20,10 +20,11 @@ const CreateOrder = async (req: Request, res: Response) => {
       res.status(400).json({
         success: false,
         message: 'Validation failed',
+        
         error,
       });
     } else {
-      
+
       // Handle other errors
       res.status(400).json({
         success: false,
