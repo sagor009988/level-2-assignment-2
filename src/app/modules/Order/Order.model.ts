@@ -2,9 +2,10 @@ import { model, Schema } from 'mongoose';
 import { OrderInterface } from './Order.interface';
 
 const orderSchema: Schema = new Schema<OrderInterface>({
-  
+
   email: {
     type: String,
+    
     required: [true, 'Email is required'],
   },
   productId: {
